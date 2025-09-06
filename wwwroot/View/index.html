@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Funcionários</h1>
+
+    <form id="form-funcionario">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="text" id="endereco" placeholder="Endereço" required>
+        <input type="text" id="ramal" placeholder="Ramal" required>
+        <input type="email" id="email" placeholder="Email profissional" required>
+        <input type="text" id="departamento" placeholder="Departamento" required>
+        <input type="number" id="salario" placeholder="Salário" required>
+        <input type="date" id="dataAdmissao" placeholder="Data de Admissão" readonly> 
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Funcionários Cadastrados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Departamento</th>
+                <th>Email</th>
+                <th>Salário</th>
+                <th>Data de Admissão</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="lista-funcionarios"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
